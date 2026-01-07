@@ -6,21 +6,30 @@ from datetime import datetime
 import random
 import logging
 from openai import OpenAI, RateLimitError, APIError, Timeout
+import  tools
 
 # ===================== 配置区域 =====================
 # 建议通过环境变量设置 API Key，避免硬编码
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-WuHGSBhmDvS18EqS47C7Bd3e1dBc4412BbB884D7E7C9D0D4")
 QINIUYUN_API_KEY = os.getenv("QINIUYUN_API_KEY", "sk-c6bc1786fe3cf6ab55cdcc0e7c1006b8b62a323c3b155d459cfc655ad9b4f659")
-CONTROL_NUM = 3  # 每次处理的最大数据量
+CONTROL_NUM = 20  # 每次处理的最大数据量
 INPUT_DIR = "input"  # 输入目录（需与实际路径匹配）
 OUTPUT_DIR = "output"  # 输出目录
 API_RETRY_TIMES = 3  # API 调用失败重试次数
 API_DELAY = 2  # 每次API调用间隔（秒）
-LANGUAGE = 'cn'
+LANGUAGE = 'en'
 OPENAI_MODEL = "gpt-oss-120b"  # 使用的GPT模型（gpt-4/gpt-3.5-turbo）
 DATASET_FILENAME = "dataset_cn.xlsx" if LANGUAGE == 'cn' else "dataset_en.xlsx"
-MAX_TOKENS = 8192  # 适配模型的最大token限制，避免响应截断
+MAX_TOKENS = 16384  # 适配模型的最大token限制，避免响应截断
 ENABLED_SHUFFLE = True
+gen_subject_white_list = [
+    "自然科学",
+    "nature science",
+    "工程学",
+    "Medicine & Health",
+    "医疗与健康",
+    "engineering",
+]
 # ====================================================
 
 # 配置日志
@@ -190,7 +199,15 @@ def parse_gpt_response(response_text: str) -> dict:
         # 修复常见的JSON格式问题
         json_str = json_str.replace("'", "\"") \
             .replace("\\n", "") \
-            .replace("\\t", "")
+            .replace("\\t", "") \
+            .replace("\1", "1") \
+            .replace("\2", "2") \
+            .replace("\3", "3") \
+            .replace("\4", "4") \
+            .replace("\5", "5") \
+            .replace("\6", "6") \
+            .replace("\7", "7") \
+            # print(json_str)
         json_data = json.loads(json_str)
 
         # 校验必要字段
@@ -214,6 +231,18 @@ def parse_gpt_response(response_text: str) -> dict:
         raise Exception(f"解析GPT响应失败：{str(e)}")
 
 
+# 生成安全的文件名（替换特殊字符+截断过长名称）
+def safe_filename(s: str) -> str:
+    if not s:
+        return "unknown"
+    # 替换Windows/UNIX非法字符
+    unsafe_chars = ['/', '\\', ':', '*', '?', '"', '<', '>', '|']
+    for char in unsafe_chars:
+        s = s.replace(char, "_")
+    # 截断过长文件名（避免系统限制）
+    return s[:50]  # 限制最大长度50字符
+
+
 def save_gpt_response(data: dict, json_data: dict):
     """
     保存GPT响应结果：
@@ -222,16 +251,6 @@ def save_gpt_response(data: dict, json_data: dict):
     :param data: 原始数据（subject/sub_subject/requirement）
     :param json_data: 解析后的GPT响应JSON
     """
-    # 生成安全的文件名（替换特殊字符+截断过长名称）
-    def safe_filename(s: str) -> str:
-        if not s:
-            return "unknown"
-        # 替换Windows/UNIX非法字符
-        unsafe_chars = ['/', '\\', ':', '*', '?', '"', '<', '>', '|']
-        for char in unsafe_chars:
-            s = s.replace(char, "_")
-        # 截断过长文件名（避免系统限制）
-        return s[:50]  # 限制最大长度50字符
 
     base_filename = safe_filename(data["idx"])
 
@@ -288,6 +307,9 @@ if __name__ == "__main__":
 
                 logger.info(f"\n处理第 {idx + 1}/{process_limit} 条：")
                 logger.info(f"学科：{subject} | 子学科：{sub_subject} | 演示目标：{requirement}")
+                if subject not in gen_subject_white_list:
+                    logger.info(f"\n不在学科白名单中，skip：")
+                    continue
 
                 # 拼接完整Prompt
                 chat_prompt = get_complete_prompt(prompt_template, subject, sub_subject, requirement)
@@ -297,11 +319,21 @@ if __name__ == "__main__":
                 if not response_text:
                     raise ValueError("GPT返回空响应")
 
-                # 解析GPT响应
-                json_data = parse_gpt_response(response_text)
+                # # 解析GPT响应
+                # json_data = parse_gpt_response(response_text) # 容易遇到异常转义符，需要修
+                #
+                # # 保存结果
+                # save_gpt_response(data, json_data)
 
-                # 保存结果
-                save_gpt_response(data, json_data)
+                try:
+                    base_filename = safe_filename(data["idx"])
+                    json_path = os.path.join(OUTPUT_DIR, f"{LANGUAGE}", f"{base_filename}.json")
+                    with open(json_path, "w", encoding="utf-8") as f:
+                        json_str = tools.process_json_string(response_text)
+                        json.dump(json_str, f, ensure_ascii=False, indent=4)
+                    logger.info(f"prompt文件已保存：{json_path}")
+                except Exception as e:
+                    raise Exception(f"保存prompt文件失败：{e}")
 
                 # 计数+延迟（最后一条不延迟）
                 processed_success += 1

@@ -1,4 +1,4 @@
-Step 1: Focusing on the demonstration objective of "{Discipline}" - "{Subdiscipline}" and its corresponding "{ExperimentName}", refer to the provided example experimental instruction manual and generate a standard and complete experimental instruction manual. (This should include a complete description of the experimental operation process, observation of experimental phenomena, and a summary of the experimental principles.) The experimental instructions generated corresponding to the demonstration objectives will be saved in Markdown format and output uniformly in a JSON message in the format shown in Appendix 3.
+Step 1: Focusing on the demonstration objective of "{Discipline}" - "{Subdiscipline}" and its corresponding "{ExperimentName}", refer to the provided example experimental instruction manual and generate a standard and complete experimental instruction manual. (This should include a complete description of the experimental operation process, observation of experimental phenomena, and a summary of the experimental principles.) The experimental instructions generated corresponding to the demonstration objectives will be saved in txt format and output uniformly in a JSON message in the format shown in Appendix 3.
 
 Step 2: Based on the experimental instruction manual generated in Step 1, and the three pieces of information—its discipline and sub-discipline—extract and summarize two pieces of information from the "Experimental Operation Demonstration Instruction Section" and output them. (Considering the 10-second video generation limit, the experimental process should be simplified or accelerated, retaining the core steps):
 
@@ -71,7 +71,12 @@ Inspection Template (containing 5 evaluation metrics):
 
 
 appendix 3:
-Return the JSON in the following format, preserving the format, but be careful not to let Markdown syntax characters affect the validity of the JSON format.
+Return the JSON in the following format, preserving the format.
+
+The final returned JSON must be in standard format:
+- The `manual` field should retain core content and concise descriptions, escaping all double quotes and keeping newlines as \\n;
+- Ensure the JSON is completely closed (no missing } or commas), and keep the number of tokens below 7000.
+
 JSON format example:
 { 
 "generation_prompt": "Prompt for generate video", 
@@ -82,5 +87,5 @@ JSON format example:
 "clr_rubic": "Rubic for Causal Logic Rationality", 
 "ri_rubic": "Rubic for Invariance", 
 }, 
-"manual_markdown": "Text fot manual markdown"
+"manual": "Text fot manual"
 }
