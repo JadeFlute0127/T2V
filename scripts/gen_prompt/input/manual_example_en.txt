@@ -1,0 +1,47 @@
+Instructions for the Experiment "Blowing Air into Clear Limewater Causes Turbidity" (Chemistry - Inorganic Chemistry)
+
+I. Basic Experiment Information
+
+1. Experiment Title: Blowing Air into Clear Limewater Causes Turbidity
+
+2. Subject: Chemistry - Inorganic Chemistry
+
+3. Experiment Objective: To verify the chemical reaction between carbon dioxide and calcium hydroxide through visual observation, understand the reaction rules between alkalis and acidic oxides; master the basic methods of obtaining clear limewater, observing experimental phenomena, and summarizing experimental principles.
+
+II. Experimental Equipment
+Test tube (1 tube, 15×150mm), test tube rack, dropper, glass tubing (with rubber tubing, approximately 30cm long), clear limewater (saturated calcium hydroxide solution, colorless and transparent), beaker (for holding the tubing, optional), safety goggles (essential, for experimental safety).
+
+III. Experimental Procedure
+Preparation Stage: After washing the test tube, place it on the test tube rack and put on safety goggles; use the dropper to draw up clear limewater and pour 1/3 of the volume of clear limewater into the test tube, ensuring the solution is free of precipitate and turbidity, and uniform in consistency.
+
+Equipment Connection: Insert one end of the glass delivery tube into the clear limewater in the test tube (with the end of the delivery tube submerged to avoid touching the test tube wall), and hold the other end in your hand. If using a beaker, place the non-inserted end of the delivery tube above the beaker for stability.
+
+Core Operation: Slowly and evenly blow air into the clear limewater with your mouth over the exposed end of the glass delivery tube, keeping the end of the delivery tube submerged throughout the blowing process to ensure sufficient air contact with the solution.
+
+Observation: Closely observe the changes in the state of the solution in the test tube during blowing until a clear phenomenon is observed, then stop blowing.
+
+Experiment Conclusion: First, remove the delivery tube from the test tube, then stop blowing (to prevent backflow of solution); place the test tube back on the test tube rack for observation. After the experiment, pour the solution into the designated waste container, clean the test tube and other equipment, and return them to their proper places.
+
+IV. Observation of Experimental Phenomena
+
+1. Initial State: The clear limewater in the test tube is a colorless and transparent liquid, without any turbidity or sediment.
+
+2. During the blowing process: With continuous blowing, the colorless and transparent limewater gradually becomes turbid. The degree of turbidity increases with the blowing time, eventually turning the entire solution into a milky white turbid state.
+
+3. Excessive blowing (optional): If a large amount of air is blown continuously, the milky white turbid solution will gradually become clear (this is a supplementary phenomenon; the core phenomenon is that the solution becomes turbid after blowing).
+
+V. Summary of Experimental Principles The core principle of this experiment is the reaction between a base and an acidic oxide in inorganic chemistry. Specifically, carbon dioxide (an acidic oxide) reacts with calcium hydroxide (a base) to form a sparingly soluble calcium carbonate precipitate, causing the solution to become turbid.
+
+1. Core Reaction Equation: Ca(OH)₂ + CO₂ = CaCO₃↓ + H₂O
+
+2. Principle Analysis: Human exhaled breath contains approximately 4%-5% carbon dioxide. When carbon dioxide enters clear limewater (mainly composed of Ca(OH)₂) through a tube, a chemical reaction occurs, producing calcium carbonate (CaCO₃), a white solid that is sparingly soluble in water. Therefore, the solution will appear milky white and turbid.
+
+3. Supplementary Principle (Excessive Breathing): If excess carbon dioxide is continuously introduced, the generated calcium carbonate will further react with carbon dioxide and water to form water-soluble calcium bicarbonate (Ca(HCO)₂). Therefore, the turbid solution will become clear again. The reaction equation is: CaCO₃ + CO₂ + H₂O = Ca(HCO₃)₂ (This is an extended principle; the core experimental principle focuses on the former). VI. Experimental Precautions
+
+1. Before the experiment, check the state of the limewater to ensure it is colorless and transparent. If it is cloudy, do not use it (it may have deteriorated).
+
+2. Blow air slowly and evenly, avoiding excessive force that could cause solution splashing or the delivery tube to detach. Ensure the end of the delivery tube remains submerged to guarantee sufficient gas contact with the solution.
+
+3. After the experiment, remove the delivery tube before stopping blowing air to prevent a decrease in pressure within the test tube that could cause solution to be aspirated into the respiratory tract, posing a safety hazard.
+
+4. Experimental waste must be poured into designated containers and not disposed of arbitrarily. Clean equipment and return it to its proper place promptly, keeping the lab bench clean.

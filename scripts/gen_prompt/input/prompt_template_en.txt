@@ -1,0 +1,86 @@
+Step 1: Focusing on the demonstration objective of "{Discipline}" - "{Subdiscipline}" and its corresponding "{ExperimentName}", refer to the provided example experimental instruction manual and generate a standard and complete experimental instruction manual. (This should include a complete description of the experimental operation process, observation of experimental phenomena, and a summary of the experimental principles.) The experimental instructions generated corresponding to the demonstration objectives will be saved in Markdown format and output uniformly in a JSON message in the format shown in Appendix 3.
+
+Step 2: Based on the experimental instruction manual generated in Step 1, and the three pieces of information—its discipline and sub-discipline—extract and summarize two pieces of information from the "Experimental Operation Demonstration Instruction Section" and output them. (Considering the 10-second video generation limit, the experimental process should be simplified or accelerated, retaining the core steps):
+
+1. A generation prompt for generating experimental videos using the T2V model (which should meet the requirements of intuitive scientific phenomena, simple scientific characteristics, simple and clear experimental operation for easy demonstration, and clear descriptions of experimental conditions, apparatus, and states); Furthermore, adjust the description to adapt to the T2V model's generation logic, placing the experimental name at the beginning of the generation prompt.
+
+2. Evaluation Rubic;
+
+For each evaluation metric in the inspection template, we construct a rubic based on the corresponding sub-items. Each evaluation metric rubic contains two categories: "hard rules" and "principles." For each given demonstration objective, a comprehensive evaluation rubic is created in conjunction with the experimental instructions.
+
+appendix 1:
+Example Experimental Instruction Manual:
+{None}
+
+appendix 2:
+Inspection Template (containing 5 evaluation metrics):
+
+1. Prompt Consistency (PC): This dimension focuses on whether the video accurately displays the scenes described in the prompt.
+
+- Hard Rules: Break down the scenes described in the prompt into multiple hard rules according to the order of the main events.
+
+- Principles:
+
+    - Do the shape, state, and color details of objects in the video scenes conform to the description and the background knowledge of the {sub-discipline}?
+
+    - Does the order of experimental steps conform to the background knowledge of the {sub-discipline}?
+
+2. Main Phenomenon Consistency (CMP): This dimension focuses on whether the video displays the expected correct phenomena/scenes.
+
+- Hard Rules: Based on the "Observation of Experimental Phenomena" section of the experimental instructions, core visual phenomena are extracted and adaptively broken down into multiple hard rules.
+
+- Principles: Based on the descriptions of details such as object shape, state, color, and sound in the experimental instructions, multiple principles are adaptively broken down around the following sub-items:
+
+    - Do the visual details conform to the subject background knowledge?
+
+    - Do the auditory details conform to the subject background knowledge?
+
+    - Does the order of observed phenomena conform to the subject background knowledge?
+
+3. Spatial-Time Logical Reasonableness (SLR): This dimension focuses on whether the temporal, spatial, and spatiotemporal relationships are reasonable.
+
+- Hard Rules: Do the elements of the video frame sequence have continuity in spatial and temporal relationships?
+
+- Principles:
+
+    - Temporal Logic: Are the dynamic changes in the video over time smooth, continuous, and consistent with the laws of the real world?
+
+    - Spatial Logic: Do the geometry, lighting, and object representation in the video in physical space conform to the laws of the real world? - Spatiotemporal Consistency: Does the video experiment's operation reasonably correspond to the changes in the state of the human body and objects in both time and space?
+
+4. Causal Logic Rationality (CLR): This dimension focuses on whether the video content is logically consistent and reasonable in terms of causal relationships.
+
+- Hard Rules: Event Causal Logic: Does the occurrence of an action lead to a reasonable subsequent result?
+
+- Principles:
+
+    - State Causal Logic: Is there a reasonable cause for the changes in the state of objects?
+
+    - Scientific Principle Logic: Do the causal relationships of events in the video conform to the experimental principles and reflect the scientific logic of the {sub-discipline}?
+
+    - Presentation of Causal Logic: The presentation of causal relationships should be concise and intuitive, meeting the core information transmission needs of the experimental video, without redundant or interfering causal chains;
+
+5. Invariance (RI): Do the object's properties always conform to physical laws? - Strict Rules:
+
+- All experimental objects (including human body parts) must maintain properties consistent with real-world physical laws throughout the experiment, without any temporary violations of scientific common sense.
+
+- Principles:
+
+    - Objects: Does the stability of object properties meet the rigorous requirements of scientific experiments, ensuring the realism and reproducibility of the experimental scenario?
+
+    - Humans: Do the properties of human body parts remain stable throughout the experiment, without any violations of human physiological common sense?
+
+
+appendix 3:
+Return the JSON in the following format, preserving the format, but be careful not to let Markdown syntax characters affect the validity of the JSON format.
+JSON format example:
+{ 
+"generation_prompt": "Prompt for generate video", 
+"evaluation_rubic": { 
+"pc_rubic": "Rubic for Prompt Consistency", 
+"cmp_rubic": "Rubic for Consistency of Main Phenomena", 
+"slr_rubic": "Rubic for Spatial-Time Logical Reasonableness", 
+"clr_rubic": "Rubic for Causal Logic Rationality", 
+"ri_rubic": "Rubic for Invariance", 
+}, 
+"manual_markdown": "Text fot manual markdown"
+}
