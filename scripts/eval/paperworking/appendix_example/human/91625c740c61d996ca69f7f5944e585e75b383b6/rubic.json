@@ -1,0 +1,38 @@
+{
+  "id": "91625c740c61d996ca69f7f5944e585e75b383b6",
+  "domain": "Humanities and Social Sciences",
+  "subject": "Archaeology",
+  "selected_point": "porosity-related water absorption of pottery fragment with visible air bubbles",
+  "posted_prompt": "Submerge a dry, unglazed pottery fragment in a clear glass tank of still water and leave it undisturbed for several minutes. Fix the focus of the camera for time-lapse photography.",
+  "video_type": "demonstration",
+  "pg_specification": {
+    "1 point": "Scene does not show pottery or water immersion; objects unrelated to the prompt.",
+    "2 points": "Pottery or water present but incorrect setup; no clear submersion process.",
+    "3 points": "Pottery fragment is submerged, but camera angle or order of steps is partially unclear.",
+    "4 points": "Clear glass tank, dry pottery fragment, correct submersion order, mostly accurate setup.",
+    "5 points": "All objects, order, and visual details exactly match the prompt and manual description."
+  },
+  "scc_specification": {
+    "1 point": "No bubble release or phenomena contradict archaeological principles.",
+    "2 points": "Some bubbles appear but timing or cause is unclear or misleading.",
+    "3 points": "Bubble release visible but weakly connected to water absorption logic.",
+    "4 points": "Clear bubble release followed by gradual reduction, consistent with porosity.",
+    "5 points": "Phenomena clearly and correctly show air displacement, water absorption, and causal logic."
+  },
+  "sc_specification": {
+    "1 point": "Severe temporal jumps or spatial inconsistencies; objects change unrealistically.",
+    "2 points": "Noticeable discontinuities in time or space affecting understanding.",
+    "3 points": "Mostly continuous but with minor temporal or spatial inconsistencies.",
+    "4 points": "Smooth temporal progression and stable spatial relationships.",
+    "5 points": "Highly consistent spatiotemporal flow; smooth, realistic changes over time."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "Instructions for the Experiment Porosity-Related Water Absorption of a Pottery FragmentI. Basic Experiment Information1. Experiment Title: Porosity-Related Water Absorption of an Unglazed Pottery Fragment2. Subject: Humanities and Social Sciences – Archaeology3. Experiment Objective: To demonstrate how the porosity of unglazed pottery allows water absorption, observed through the release of trapped air bubbles when a dry pottery fragment is submerged in still water; to train observation and documentation skills using time-lapse photography.II. Experimental EquipmentUnglazed pottery fragment (dry, with visible pores or air bubbles), clear glass tank or aquarium, clean still water (room temperature), stable platform or table, camera or smartphone with tripod, lighting source (optional, steady and uniform).III. Experimental Procedure1. Preparation: Ensure the pottery fragment is completely dry. Fill the clear glass tank with still water, avoiding bubbles or turbulence. Place the tank on a stable surface.2. Camera Setup: Position the camera facing the side of the glass tank. Fix the focus and exposure manually. Set the camera for time-lapse or continuous recording.3. Submersion Operation: Gently place the dry, unglazed pottery fragment into the water, ensuring it is fully submerged without splashing or stirring the water.4. Static Observation: Leave the fragment undisturbed in the water for several minutes while the camera records continuously.5. Completion: Stop recording after the visible bubble release significantly decreases. Remove the fragment and drain the tank if needed.IV. Observation of Experimental Phenomena1. Initial State: Immediately after submersion, small air bubbles appear on the surface of the pottery fragment.2. During Immersion: A steady stream of tiny bubbles rises from the pores of the fragment and moves upward through the water.3. Later Stage: The number of bubbles gradually decreases as water fills the pores; the fragment appears darker due to water absorption.V. Summary of Experimental PrinciplesUnglazed pottery contains numerous microscopic pores formed during shaping and firing. When dry pottery is submerged, water enters these pores by capillary action, displacing trapped air. The escaping air forms visible bubbles, which provide direct visual evidence of porosity and water absorption. This principle is fundamental in archaeology for understanding pottery technology, function, and preservation.VI. Experimental Precautions1. Do not disturb the water during observation to avoid false bubbles.2. Ensure consistent lighting and fixed camera focus for clear time-lapse documentation.3. Handle pottery fragments carefully to avoid damage.",
+  "high_level_evaluation_guide": "Target concept: Porosity-driven water absorption in unglazed archaeological pottery. Minimum assumptions: the pottery is dry, porous, unglazed, and submerged in still water; air occupies pores before immersion; water enters pores via capillary action.Expected phased storyline: Phase 1 – Initial submersion with still water and intact fragment; Phase 2 – Immediate release of small air bubbles from the fragment surface as water enters pores; Phase 3 – Gradual decline of bubbles and darkening of the fragment as pores fill with water. Visibility constraints: side-on view through clear glass, fixed focus, stable lighting, and uninterrupted time sequence to verify causal transitions."
+}

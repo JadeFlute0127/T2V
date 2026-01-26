@@ -1,0 +1,38 @@
+{
+  "id": "18c5ac6be53dfbe55752eb7b3dd2e704cec71302",
+  "domain": "Healthcare",
+  "subject": "Pharmacy",
+  "selected_point": "dissolution of crystalline sugar vs. amorphous sugar glass in water",
+  "posted_prompt": "Two identical clear beakers of room‑temperature water sit side by side; crystalline sugar drops into the left, sugar glass shards into the right, both gently stirred equally. Fix the focus of the camera for time-lapse photography.",
+  "video_type": "expirement",
+  "pg_specification": {
+    "1 point": "Scene does not show two beakers, or materials are unrelated to sugar dissolution; actions and objects do not match the prompt.",
+    "2 points": "Two containers are present but not identical or unclear; sugar forms are ambiguous; operation order is largely incorrect.",
+    "3 points": "Two similar beakers with water are shown; crystalline sugar and sugar glass are roughly distinguishable; basic operation order is mostly correct.",
+    "4 points": "Two identical clear beakers with water are clearly visible; crystalline sugar on the left and sugar glass on the right are correctly placed and gently stirred in the correct order.",
+    "5 points": "Scene perfectly matches the prompt: identical beakers side by side, correct sugar forms placed in correct positions, equal gentle stirring, stable fixed camera perspective suitable for time-lapse."
+  },
+  "scc_specification": {
+    "1 point": "Observed dissolution behavior contradicts scientific knowledge; no visible difference between crystalline and amorphous sugar.",
+    "2 points": "Some dissolution occurs but visual changes are confusing or scientifically unreasonable.",
+    "3 points": "Crystalline sugar dissolves more slowly than sugar glass, but differences are subtle or poorly presented.",
+    "4 points": "Sugar glass dissolves noticeably faster than crystalline sugar, with reasonable cause-effect consistency.",
+    "5 points": "Clear, correct, and intuitive causal logic: sugar glass rapidly disperses and dissolves due to amorphous structure, crystalline sugar dissolves slower; phenomena fully align with principles."
+  },
+  "sc_specification": {
+    "1 point": "Severe temporal or spatial discontinuity; objects jump, disappear, or violate physical laws.",
+    "2 points": "Noticeable temporal jumps or spatial inconsistencies affecting understanding.",
+    "3 points": "Overall continuity is acceptable; minor inconsistencies do not affect core comprehension.",
+    "4 points": "Smooth temporal progression and stable spatial layout; dissolution progresses logically over time.",
+    "5 points": "Excellent spatiotemporal consistency: smooth time-lapse progression, stable object positions, realistic motion and dissolution behavior."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "I. Basic Experiment Information1. Experiment Title: Dissolution of Crystalline Sugar vs. Amorphous Sugar Glass in Water2. Subject: Healthcare – Pharmacy (Physical Pharmacy)3. Experiment Objective: To visually compare and understand the difference in dissolution behavior between crystalline sugar and amorphous sugar glass in water, and relate the phenomenon to solid-state structure and free energy.II. Experimental EquipmentTwo identical clear glass beakers, room-temperature water, crystalline sugar (granulated sucrose), sugar glass shards (amorphous sucrose), glass stirring rods (2), camera with fixed focus for time-lapse recording.III. Experimental Procedure1. Preparation: Place two identical beakers side by side on a flat surface. Pour equal volumes of room-temperature water into each beaker.2. Material Addition: Add an equal mass of crystalline sugar into the left beaker. Add an equal mass of sugar glass shards into the right beaker.3. Stirring: Gently stir both beakers simultaneously and equally using separate glass rods.4. Recording: Fix the camera focus and record the dissolution process using time-lapse photography.5. Completion: Stop stirring once clear differences in dissolution behavior are observed.IV. Observation of Experimental PhenomenaInitially, both sugars are visible as solid particles. During stirring, sugar glass in the right beaker rapidly disperses and dissolves, causing quick clarification. Crystalline sugar in the left beaker dissolves more slowly, with visible granules persisting for a longer time.V. Summary of Experimental PrincipleSugar glass is an amorphous solid with higher free energy and greater molecular mobility, allowing water to penetrate and dissolve it rapidly. Crystalline sugar has an ordered lattice with lower free energy, requiring more time for water molecules to break intermolecular interactions, resulting in slower dissolution. This demonstrates the influence of solid-state structure on dissolution rate, an important concept in pharmacy.",
+  "high_level_evaluation_guide": "Target Concept: Comparison of dissolution behavior between crystalline and amorphous solids based on solid-state structure and free energy differences. Minimum assumptions include identical solvent conditions, equal solute mass, and equal stirring intensity.Expected Phenomena Storyline: Phase 1 – Two identical beakers with water and distinct sugar forms are presented side by side. Phase 2 – Upon equal stirring, sugar glass rapidly disperses and dissolves, while crystalline sugar remains visible longer. Phase 3 – Over time-lapse progression, the right beaker becomes clear sooner than the left. Visibility Constraints: Fixed camera focus, clear side-by-side framing, and sufficient clarity to distinguish dissolution rates."
+}

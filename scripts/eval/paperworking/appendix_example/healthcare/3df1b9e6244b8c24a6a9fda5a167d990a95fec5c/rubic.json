@@ -1,0 +1,38 @@
+{
+  "id": "3df1b9e6244b8c24a6a9fda5a167d990a95fec5c",
+  "domain": "Healthcare",
+  "subject": "Medicine",
+  "selected_point": "blink reflex to sudden air puff near the eye",
+  "posted_prompt": "A person faces the camera as a handheld air bulb delivers a brief air puff from the side toward one eye at close range.",
+  "video_type": "expirement",
+  "pg_specification": {
+    "1 point": "Scene does not show a person facing the camera or no air bulb/air puff near the eye; core prompt elements missing.",
+    "2 points": "Person and air bulb appear but orientation, distance, or delivery direction (not from the side toward one eye) is largely incorrect.",
+    "3 points": "Person faces camera and air bulb is used near one eye, but positioning or sequence is partially inaccurate or unclear.",
+    "4 points": "Person faces camera; handheld air bulb delivers a brief air puff from the side toward one eye at close range with minor framing issues.",
+    "5 points": "All prompt elements are clearly and accurately shown in correct order: person faces camera, air bulb at close range, side-directed puff toward one eye."
+  },
+  "scc_specification": {
+    "1 point": "No blink or eye response; actions and outcomes contradict known blink reflex physiology.",
+    "2 points": "Blink occurs without clear air puff cause, or timing is inconsistent with reflex causality.",
+    "3 points": "Air puff causes a blink, but reflex is delayed, exaggerated, or poorly linked to the stimulus.",
+    "4 points": "Brief air puff leads to rapid involuntary blink with reasonable timing and physiology.",
+    "5 points": "Clear state-cause-effect: sudden side air puff immediately triggers an involuntary blink consistent with trigeminal–facial reflex logic."
+  },
+  "sc_specification": {
+    "1 point": "Severe temporal or spatial discontinuity; objects jump positions or timing is illogical.",
+    "2 points": "Noticeable inconsistencies in timing or spatial relations between air bulb, eye, and blink.",
+    "3 points": "Overall continuity is acceptable but with minor spatial or temporal inconsistencies.",
+    "4 points": "Spatial positioning and timing are mostly consistent; blink follows stimulus smoothly.",
+    "5 points": "High spatiotemporal consistency: stable camera view, correct distances, smooth timing from puff to blink."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "Instructions for the Experiment Blink Reflex to Sudden Air PuffI. Basic InformationTitle: Blink Reflex to Sudden Air Puff Near the EyeSubject: Healthcare – Medicine (Neurophysiology)Objective: To demonstrate the involuntary blink reflex elicited by a sudden air stimulus near the eye and understand its neural basis.II. EquipmentHandheld rubber air bulb, chair or standing space, camera (frontal view), clean environment, optional eye protection for non-tested eye.III. Experimental ProcedurePreparation: The subject sits or stands facing the camera with eyes open and relaxed. The operator holds the air bulb at close range (about 5–10 cm) to the side of one eye, avoiding contact.Core Operation: Without touching the eye or eyelashes, the operator delivers a brief, sudden air puff from the side toward the exposed eye.Completion: The air bulb is withdrawn after the puff; no repeated stimulation unless required.IV. Observation of PhenomenaInitial State: Eyes are open and stable.During Stimulation: Immediately after the air puff, the stimulated eye shows a rapid, involuntary blink; often both eyes blink.After Stimulation: Eyes reopen quickly with no lasting discomfort.V. Experimental Principle SummaryThe blink reflex is a protective, involuntary response mediated by a brainstem reflex arc. Sudden air movement stimulates corneal or periocular receptors, activating the trigeminal nerve (sensory limb). The signal is processed in the brainstem and transmitted via the facial nerve (motor limb), causing contraction of the orbicularis oculi muscles and rapid eyelid closure.",
+  "high_level_evaluation_guide": "Target concept: The involuntary blink reflex triggered by a sudden air stimulus near the eye, assuming basic human neuroanatomy with intact trigeminal sensory input and facial motor output. Expected phenomena storyline: (1) Stable baseline with eyes open and subject facing camera; (2) Sudden side-directed air puff at close range; (3) Immediate involuntary blink occurring as a direct consequence of the stimulus; (4) Rapid recovery with eyes reopening. Verification requires a clear frontal view of the face, visible air bulb action from the side, and tight temporal coupling between puff and blink within the short video duration."
+}

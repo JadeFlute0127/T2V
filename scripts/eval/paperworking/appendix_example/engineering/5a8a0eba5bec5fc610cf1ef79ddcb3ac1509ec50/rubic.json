@@ -1,0 +1,38 @@
+{
+  "id": "5a8a0eba5bec5fc610cf1ef79ddcb3ac1509ec50",
+  "domain": "Engineering",
+  "subject": "Computer Science",
+  "selected_point": "Binary Tree Level-order Traversal Demonstration",
+  "posted_prompt": "Show a simple binary tree with labeled nodes (1–7) on a light background; highlight nodes level by level from top to bottom using a bright color (e.g., red) to demonstrate level-order traversal. As each node is visited, briefly glow it and append its value to a horizontal output list at the bottom of the screen in left-to-right order.",
+  "video_type": "expirement",
+  "pg_specification": {
+    "1 point": "Scene does not show a binary tree or lacks labeled nodes; no level-order highlighting or output list.",
+    "2 points": "Binary tree is partially shown but node labels (1–7), background, or highlighting color are incorrect or unclear; traversal order is confusing.",
+    "3 points": "Binary tree with labels 1–7 is visible; level-by-level highlighting exists but timing or order has minor errors; output list is present but imperfect.",
+    "4 points": "Clear binary tree on light background; nodes are highlighted level by level in correct order; output list updates mostly correctly with minor visual issues.",
+    "5 points": "Perfect grounding: simple binary tree with labeled nodes 1–7 on a light background; nodes highlighted level by level from top to bottom in bright color; each visit glows and appends correctly to the bottom output list."
+  },
+  "scc_specification": {
+    "1 point": "Traversal order is wrong; visual changes do not correspond to level-order traversal principles.",
+    "2 points": "Some correct traversal logic, but key causal links are missing, such as incorrect left-to-right order within levels.",
+    "3 points": "Overall level-order traversal logic is correct; minor inconsistencies between node highlighting and output list updates.",
+    "4 points": "Correct and consistent level-order traversal; highlighting causes correct appending to output list with clear causal logic.",
+    "5 points": "Fully correct scientific and algorithmic logic: breadth-first traversal shown accurately; each node visit clearly causes glow and correct left-to-right output append."
+  },
+  "sc_specification": {
+    "1 point": "Severe temporal or spatial discontinuity; nodes jump positions or highlights appear randomly.",
+    "2 points": "Noticeable timing or spatial inconsistencies; traversal steps overlap or skip levels.",
+    "3 points": "Acceptable continuity; traversal proceeds in order with minor timing or spacing issues.",
+    "4 points": "Good spatiotemporal consistency; smooth transitions between node highlights and stable layout.",
+    "5 points": "Excellent spatiotemporal consistency; stable tree layout, smooth sequential highlighting, and clearly ordered output list updates."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "Instructions for the Experiment: Binary Tree Level-order Traversal DemonstrationI. Basic Experiment InformationExperiment Title: Binary Tree Level-order Traversal DemonstrationSubject: Engineering - Computer ScienceObjective: To visually demonstrate level-order (breadth-first) traversal of a binary tree and understand how nodes are visited level by level from top to bottom and left to right.II. Experimental Materials and EnvironmentA simple binary tree diagram with 7 nodes labeled 1–7; light-colored background; animation or visualization tool capable of highlighting nodes and displaying an output list.III. Experimental Procedure1. Preparation: Display a simple complete binary tree with node 1 as the root, nodes 2 and 3 as its children, and nodes 4–7 as the third level, all on a light background.2. Initialization: Prepare an empty horizontal output list at the bottom of the screen.3. Core Operation: Begin level-order traversal.   a. Highlight the root node (1) in a bright color such as red; briefly apply a glow effect.   b. Append value 1 to the output list.   c. Move to the next level and highlight nodes 2 and 3 from left to right, one by one, each with a brief glow, appending their values in order.   d. Proceed to the third level and highlight nodes 4, 5, 6, and 7 from left to right, appending each value to the output list as it is visited.4. Completion: Stop the traversal when all nodes have been visited and the output list contains 1–7 in level-order.IV. Observation of Experimental Phenomena1. Initial State: All nodes are visible but unhighlighted; output list is empty.2. During Traversal: Nodes are highlighted level by level from top to bottom; within each level, nodes are highlighted from left to right; each highlight is followed by an update to the output list.3. Final State: All nodes have been highlighted once; the output list shows a complete left-to-right sequence: 1, 2, 3, 4, 5, 6, 7.V. Summary of Experimental PrincipleLevel-order traversal, also known as breadth-first traversal, visits nodes of a binary tree level by level starting from the root. It uses the principle of visiting all nodes at a given depth before moving to the next depth, typically implemented with a queue. The visualization demonstrates this principle by sequentially highlighting nodes by level and appending their values to an output list in the exact visiting order.",
+  "high_level_evaluation_guide": "Target concept: Binary tree level-order (breadth-first) traversal. Minimum assumptions: a static binary tree structure with fixed node positions and labels, and a visualization system capable of sequential highlighting and list updates. Expected phenomena storyline: Phase 1 shows the full tree and empty output list; Phase 2 highlights the root and appends its value; Phase 3 highlights second-level nodes left to right with corresponding output updates; Phase 4 highlights third-level nodes left to right, completing the output list. Key causal transitions: node highlight represents a visit, which directly causes the node value to appear in the output list. Visibility constraints: the entire tree and the output list must remain visible throughout to verify order and correctness."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "9e3ffb8a6a7ac10cfda552de0144e18a02ad2b3b",
+  "domain": "Healthcare",
+  "subject": "Nursing",
+  "selected_point": "tablet vs capsule vs liquid dissolving in water",
+  "posted_prompt": "Three clear water-filled glasses side by side: a tablet dropped into the left, a capsule into the center, and liquid medication poured into the right. Fix the focus of the camera for time-lapse photography.",
+  "video_type": "expirement",
+  "pg_specification": {
+    "1 point": "Scene does not show three water-filled glasses or medication forms; objects and layout are unrelated to the prompt.",
+    "2 points": "Three containers are present but not clearly glasses, or medication forms are incorrect or indistinguishable; order is confusing.",
+    "3 points": "Three clear glasses with water are visible and correct medication forms appear, but placement (left/center/right) or action order has minor errors.",
+    "4 points": "Three clear water-filled glasses are correctly aligned left to right; tablet, capsule, and liquid medication are applied mostly in correct positions with minor framing issues.",
+    "5 points": "Exactly three clear water-filled glasses are shown side by side; tablet dropped into left, capsule into center, liquid poured into right in correct order with stable fixed focus suitable for time-lapse."
+  },
+  "scc_specification": {
+    "1 point": "Dissolving behavior is scientifically incorrect (e.g., tablet instantly disappears, capsule never opens, liquid forms solids).",
+    "2 points": "Some correct behaviors appear, but major causal errors exist, such as capsule dissolving faster than liquid without explanation.",
+    "3 points": "Overall dissolving trends are reasonable, but differences among tablet, capsule, and liquid are weak or partially inconsistent.",
+    "4 points": "Observed phenomena largely match expectations: liquid disperses fastest, tablet disintegrates gradually, capsule opens then releases contents.",
+    "5 points": "Phenomena clearly and correctly show causal differences in dissolution based on dosage form, fully consistent with nursing pharmacology principles."
+  },
+  "sc_specification": {
+    "1 point": "Severe temporal or spatial discontinuities; objects jump, change size, or positions reset.",
+    "2 points": "Noticeable time or space inconsistencies; dissolving restarts or camera perspective shifts abruptly.",
+    "3 points": "Basic temporal continuity is maintained, but dissolving progression is uneven or slightly discontinuous.",
+    "4 points": "Smooth temporal progression and stable spatial layout; dissolving changes are continuous and believable.",
+    "5 points": "Excellent spatiotemporal consistency; fixed camera, stable lighting, and continuous accelerated time-lapse dissolution without contradictions."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "Instructions for the Experiment: Comparison of Tablet, Capsule, and Liquid Medication Dissolving in WaterI. Basic Experiment Information1. Experiment Title: Tablet vs Capsule vs Liquid Medication Dissolving in Water2. Subject: Healthcare – Nursing (Pharmacology Basics)3. Experiment Objective: To visually compare the dissolution behaviors of tablet, capsule, and liquid medication forms in water, understand how dosage form affects onset and absorption, and strengthen nursing knowledge of medication administration.II. Experimental EquipmentThree identical clear glass cups, clean water (room temperature), one tablet medication (uncoated or film-coated), one capsule medication, one liquid medication (syrup or solution), dropper or measuring cup (for liquid), stable table surface, camera or phone with fixed focus for time-lapse recording.III. Experimental Procedure1. Preparation: Place three identical clear glasses side by side on a flat surface. Fill each glass with the same volume of clean water. Label positions visually as left, center, and right.2. Camera Setup: Fix the camera on a tripod facing the glasses. Lock focus and exposure to ensure consistent time-lapse recording.3. Core Operation:(1) Drop one tablet gently into the left glass.(2) Drop one capsule gently into the center glass.(3) Pour a measured amount of liquid medication into the right glass.4. Observation: Begin time-lapse recording immediately. Observe the changes in each glass without stirring.5. Conclusion: Stop recording once clear differences in dissolving or dispersing behavior are visible. Dispose of solutions properly and clean equipment.IV. Observation of Experimental Phenomena1. Initial State: All glasses contain clear, colorless water; medications are intact upon contact.2. Liquid Medication: Immediately disperses into the water, forming a uniformly colored solution.3. Tablet: Gradually absorbs water, sinks or rests at the bottom, then disintegrates into smaller particles before dissolving.4. Capsule: The outer shell softens and opens first, then releases internal powder or granules, which dissolve gradually.V. Summary of Experimental PrinciplesDifferent medication dosage forms are designed with different dissolution characteristics. Liquid medications require no disintegration and disperse fastest. Tablets must first disintegrate before dissolving. Capsules dissolve in two stages: shell dissolution followed by release and dissolution of contents. These differences influence drug onset time and are important considerations in nursing medication administration.",
+  "high_level_evaluation_guide": "Target Concept: Comparison of medication dosage forms based on dissolution behavior in water, assuming basic pharmacological knowledge that form affects dissolution and absorption.Minimum Mechanistic Assumptions: Water acts as a solvent; no stirring is applied; room-temperature conditions; dosage forms behave according to standard pharmaceutical design.Phased Storyline: (1) Static setup with three identical water-filled glasses; (2) Sequential introduction of tablet, capsule, and liquid into left, center, and right glasses; (3) Accelerated time-lapse showing immediate dispersion of liquid, gradual tablet disintegration, and two-stage capsule dissolution; (4) End state highlighting clear comparative differences.Visibility and Perspective Constraints: Fixed camera angle, stable lighting, and unobstructed view of all three glasses are required to verify spatial order, temporal progression, and causal dissolution differences."
+}

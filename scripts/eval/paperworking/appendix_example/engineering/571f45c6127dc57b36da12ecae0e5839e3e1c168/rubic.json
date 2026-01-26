@@ -1,0 +1,38 @@
+{
+  "id": "571f45c6127dc57b36da12ecae0e5839e3e1c168",
+  "domain": "Engineering",
+  "subject": "Electrical Engineering",
+  "selected_point": "pyrolytic graphite hovering above a neodymium magnet array",
+  "posted_prompt": "On a tabletop, arrange a checkerboard array of small neodymium cube magnets with alternating poles, then release a thin square of pyrolytic graphite above the array. Fix the focus of the camera for time-lapse photography.",
+  "video_type": "expirement",
+  "pg_specification": {
+    "1 point": "Scene does not show magnets or graphite; objects unrelated to prompt; operation order missing or incorrect.",
+    "2 points": "Magnets or graphite appear but arrangement is wrong (no checkerboard/alternating poles) or camera setup unclear.",
+    "3 points": "Checkerboard magnet array present; graphite shown above array, but release or camera focus step incomplete.",
+    "4 points": "Correct checkerboard array with alternating poles; graphite released above array; camera fixed, minor framing issues.",
+    "5 points": "Exact tabletop setup; clear checkerboard array; thin square graphite released correctly; camera fixed for time-lapse."
+  },
+  "scc_specification": {
+    "1 point": "Graphite behavior violates physics (sticks, flies away, or no interaction); no hovering effect.",
+    "2 points": "Some repulsion shown but unstable or causally unclear; hovering not centered or inconsistent.",
+    "3 points": "Brief hovering observed; causal link between magnets and graphite implied but not clear.",
+    "4 points": "Stable hovering with small lateral confinement; cause-effect between magnet array and graphite is clear.",
+    "5 points": "Clear, stable diamagnetic levitation and trapping; causal logic concise and scientifically correct."
+  },
+  "sc_specification": {
+    "1 point": "Severe temporal jumps; objects change position/shape abruptly; spatial inconsistency.",
+    "2 points": "Noticeable discontinuities; lighting or geometry inconsistent across frames.",
+    "3 points": "Overall continuity acceptable; minor jumps not affecting understanding.",
+    "4 points": "Smooth temporal progression; consistent spatial layout and lighting.",
+    "5 points": "Highly consistent space-time continuity; smooth motion and stable geometry throughout."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "Instructions for the Experiment: Pyrolytic Graphite Hovering Above a Neodymium Magnet ArrayI. Basic Experiment Information1. Experiment Title: Pyrolytic Graphite Diamagnetic Levitation2. Subject: Engineering - Electrical Engineering (Electromagnetics)3. Experiment Objective: To demonstrate diamagnetism and magnetic field shaping by observing stable hovering of pyrolytic graphite above a checkerboard array of neodymium magnets; to practice precise setup and visual documentation via time-lapse.II. Experimental Equipment- Neodymium cube magnets (e.g., 5–10 mm, 16–36 pieces)- Non-magnetic base plate (plastic/acrylic)- Thin square of pyrolytic graphite (≈20–30 mm, <0.5 mm thick)- Tweezers (non-magnetic)- Camera or smartphone with tripod- Flat tabletopIII. Experimental Procedure1. Preparation: Place the non-magnetic base on a flat tabletop. Ensure the surface is level and vibration-free.2. Magnet Arrangement: Arrange the cube magnets into a checkerboard grid with alternating north/south poles facing upward. Press magnets tightly together to minimize gaps.3. Camera Setup: Mount the camera above or at a shallow angle to the array. Fix focus and exposure; enable time-lapse or continuous recording.4. Core Operation: Using tweezers, gently lower the pyrolytic graphite to a few millimeters above the magnet array center, then release without imparting lateral force.5. Observation Period: Allow the graphite to settle. Record the hovering and any small lateral stabilization over the array.6. Completion: Stop recording. Carefully remove the graphite and disassemble magnets for storage.IV. Observation of Experimental Phenomena1. Initial State: Graphite is unsupported above the array.2. After Release: The graphite rises slightly or remains suspended, hovering a small distance above the magnets.3. Stabilization: The graphite shows lateral confinement near the array center, with small oscillations that damp out.V. Summary of Experimental PrinciplesPyrolytic graphite is strongly diamagnetic, generating an induced magnetic moment opposite to the applied magnetic field. The checkerboard magnet array creates a strong field gradient. The diamagnetic repulsion balances gravity, enabling stable levitation. Spatial field variation provides lateral trapping, resulting in a stable hovering equilibrium.VI. Experimental Precautions- Handle neodymium magnets carefully to avoid pinching.- Use non-magnetic tools.- Avoid air currents and vibrations for stable hovering.",
+  "high_level_evaluation_guide": "Target concept: Diamagnetic levitation of pyrolytic graphite in a shaped magnetic field. Minimum assumptions: graphite is thin and diamagnetic; magnet array has alternating poles creating strong gradients; gravity is balanced by magnetic repulsion.Phased storyline: (1) Static setup on tabletop with checkerboard magnet array; (2) camera fixed and focused; (3) graphite lowered and released; (4) immediate vertical balance and visible hovering; (5) brief lateral stabilization with small oscillations. Visibility constraints: clear view of gap between graphite and magnets; stable framing to verify hovering and confinement."
+}

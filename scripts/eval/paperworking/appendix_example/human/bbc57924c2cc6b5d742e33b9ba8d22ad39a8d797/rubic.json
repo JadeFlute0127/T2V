@@ -1,0 +1,38 @@
+{
+  "id": "bbc57924c2cc6b5d742e33b9ba8d22ad39a8d797",
+  "domain": "Humanities and Social Sciences",
+  "subject": "Architecture & Urban Planning",
+  "selected_point": "snow or granular material sliding off steep roof compared to shallow roof",
+  "posted_prompt": "Two model roofs stand side by side, the left one gentler and the right one steeper, both made of the same material. The same white granular material is then sprinkled onto both roofs. The camera focuses on the white granular material sliding down the roofs on both sides.",
+  "video_type": "demonstration",
+  "pg_specification": {
+    "1 point": "The video does not show two roofs, or roof shapes/materials are unclear or unrelated to the prompt.",
+    "2 points": "Two roofs appear but slope difference, material consistency, or granular material is unclear or incorrect.",
+    "3 points": "Two roofs are visible with some slope difference; granular material is shown but steps or order are partially incorrect.",
+    "4 points": "Two roofs with clearly different slopes and same material are shown; granular material is sprinkled in correct order with minor visual omissions.",
+    "5 points": "Two model roofs stand side by side with clearly distinguishable gentle and steep slopes, same material, white granular material is evenly sprinkled, and camera focus matches the prompt exactly."
+  },
+  "scc_specification": {
+    "1 point": "Granular material behavior is completely unrealistic or contradicts basic physical principles.",
+    "2 points": "Granular material slides in a confusing or incorrect way with weak or broken causal logic.",
+    "3 points": "Granular material generally slides faster on the steeper roof, but motion or sequence has noticeable inaccuracies.",
+    "4 points": "Granular material behavior is mostly correct: slower or partial sliding on gentle roof and faster sliding on steep roof, with clear cause-effect.",
+    "5 points": "Granular material shows clear contrast: accumulation or slow movement on gentle roof and rapid sliding off steep roof, fully consistent with gravity and friction principles."
+  },
+  "sc_specification": {
+    "1 point": "Spatial layout or timing is chaotic; roofs or material change position abruptly or illogically.",
+    "2 points": "Basic continuity exists but with frequent spatial or temporal inconsistencies.",
+    "3 points": "Overall continuity is acceptable; minor discontinuities do not block understanding.",
+    "4 points": "Spatial positions of roofs and material are stable; motion over time is smooth and realistic.",
+    "5 points": "Excellent spatiotemporal consistency: stable camera, continuous motion, realistic gravity-driven flow without jumps or distortions."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "Experimental Instruction Manual: Snow or Granular Material Sliding off Steep vs Shallow RoofI. Basic Experiment Information1. Experiment Title: Comparison of Granular Material Sliding on Steep and Shallow Roofs2. Subject: Architecture & Urban Planning3. Experiment Objective: To demonstrate how roof slope affects the sliding behavior of snow or granular materials, and to understand the role of gravity and friction in roof design.II. Experimental EquipmentTwo model roofs of identical material and surface texture; support stand to hold roofs side by side; white granular material (simulating snow); spoon or shaker for sprinkling; camera for close-up observation.III. Experimental Procedure1. Preparation: Fix the two model roofs side by side on a stand, ensuring the left roof has a gentle slope and the right roof has a steeper slope. Confirm both roofs are made of the same material and are clean and dry.2. Sprinkling Operation: Using the spoon or shaker, simultaneously and evenly sprinkle the same amount of white granular material onto the upper sections of both roofs.3. Observation Operation: Keep the camera focused on both roofs as the granular material begins to move under gravity.4. Completion: Allow the granular material to finish sliding or settling, then stop the recording.IV. Observation of Experimental Phenomena1. Initial State: White granular material rests on both roofs after sprinkling.2. During Sliding: On the gentle roof, the material slides slowly or partially accumulates; on the steep roof, the material slides down quickly and more completely.3. Final State: More granular material remains on the gentle roof, while most material has slid off the steep roof.V. Summary of Experimental PrinciplesThe experiment demonstrates that roof slope affects the balance between gravitational force and friction. A steeper slope increases the component of gravity parallel to the roof surface, making it easier for snow or granular material to overcome friction and slide off. Gentler slopes have a smaller gravitational component, causing material to slide more slowly or remain in place. This principle is important in architectural roof design for snow management and structural safety.",
+  "high_level_evaluation_guide": "Target concept: Roof slope influences the sliding behavior of snow or granular materials through gravity–friction balance. Minimum assumptions: two roofs of identical material, one gentle and one steep; gravity acts downward; granular material behaves as a loose solid. Expected phenomena storyline: (1) Two roofs are shown side by side with clear slope contrast; (2) white granular material is sprinkled onto both roofs at the same time; (3) material begins to move—slow or partial movement on the gentle roof, rapid sliding on the steep roof; (4) final contrast where the steep roof is mostly cleared while the gentle roof retains material. Camera should maintain a stable, frontal or slightly angled view to allow direct comparison of motion on both roofs."
+}
