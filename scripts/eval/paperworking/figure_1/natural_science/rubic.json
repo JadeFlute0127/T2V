@@ -1,0 +1,38 @@
+{
+  "id": "4cc069c1d3a99e3ff3f482ac1002adf66e30759e",
+  "domain": "Natural Science",
+  "subject": "Physics",
+  "selected_point": "rubber eraser vs metal block sliding down identical ramps",
+  "posted_prompt": "Two identical side-by-side ramps with a rubber eraser on the left and a metal block on the right; increase the angle together, then let both slide.",
+  "video_type": "experiment",
+  "pg_specification": {
+    "1 point": "Scene does not show two ramps or materials; objects and setup are unrelated to the prompt.",
+    "2 points": "Two ramps are present but not identical, or materials are incorrect or unclear; step order is confused.",
+    "3 points": "Two similar ramps with eraser and metal block are visible, but placement (left/right) or angle-adjustment steps are incomplete.",
+    "4 points": "Two identical side-by-side ramps are clearly shown, with a rubber eraser on the left and a metal block on the right; angle is increased together before release.",
+    "5 points": "All prompt elements are precisely grounded: identical ramps, correct left-right placement, synchronized angle increase, and correct release sequence, clearly visible."
+  },
+  "scc_specification": {
+    "1 point": "Observed motion contradicts basic physics, such as the eraser sliding earlier with no justification.",
+    "2 points": "Some motion is shown, but frictional effects are unclear or causally inconsistent.",
+    "3 points": "General trend is correct, but timing or explanation of sliding differences is ambiguous.",
+    "4 points": "Metal block slides first while eraser resists motion; causal link to friction is mostly clear.",
+    "5 points": "Phenomena fully match physics principles: higher friction on rubber delays motion, with clear state-cause-effect logic and no scientific errors."
+  },
+  "sc_specification": {
+    "1 point": "Object positions, angles, or motions change abruptly with no continuity.",
+    "2 points": "Temporal or spatial jumps occur during angle increase or sliding.",
+    "3 points": "Overall continuity is acceptable, with minor inconsistencies in motion smoothness.",
+    "4 points": "Angle increase and sliding occur smoothly and continuously in space and time.",
+    "5 points": "Excellent spatiotemporal consistency: smooth angle adjustment, realistic acceleration, and stable object geometry throughout."
+  },
+  "lpf_specification": {
+    "1 point": "Poor visual quality: Blurry and flickering image, completely incomprehensible; frequent distortion of the shape and movement trajectory of people or objects, basically not following natural laws; frequent and significant fluctuations, frame drops, and jumps in inter-frame transitions.",
+    "2 points": "Low visual quality: Low clarity of single frames, with obvious artifacts or stroke jitter, affecting comprehension. Object movement often violates natural laws; frequent fluctuations and jumps in inter-frame transitions.",
+    "3 points": "Acceptable quality: Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; occasional unnatural and discontinuous object movement; no obvious fluctuations or jumps in inter-frame transitions.",
+    "4 points": "Good quality: Relatively clear overall image; objects are relatively natural, single frames and frame sequences basically conform to real scenes; relatively smooth inter-frame transitions.",
+    "5 points": "High quality: Single frames and frame sequences are clear and stable, with realistic and detailed visuals and smooth timing; all object attributes are stable, and motion, color, and lighting effects match realistic performance; inter-frame transitions are silky smooth, achieving high-fidelity quality."
+  },
+  "manual": "Experimental Instruction Manual: Rubber Eraser vs Metal Block Sliding Down Identical RampsI. Basic Experiment InformationExperiment Title: Comparison of Sliding Motion of Rubber Eraser and Metal Block on Identical RampsSubject: Physics – Mechanics (Friction)Objective: To observe the effect of friction on motion by comparing the sliding behavior of a rubber eraser and a metal block on identical inclined planes.II. Experimental EquipmentTwo identical ramps, rubber eraser, metal block, adjustable support (to change ramp angle), flat table surface.III. Experimental Procedure1. Place two identical ramps side by side on a flat table, ensuring equal length and surface material.2. Put the rubber eraser at the top of the left ramp and the metal block at the top of the right ramp.3. Ensure both objects are initially at rest and aligned at the same height.4. Slowly and simultaneously increase the angle of both ramps using the adjustable support.5. Continue increasing the angle until one or both objects begin to slide, then stop adjusting and observe.IV. Observation of Experimental Phenomena1. At small angles, neither object slides.2. As the angle increases, the metal block begins to slide down first.3. The rubber eraser remains stationary until a larger angle is reached, then slides more slowly.V. Summary of Experimental PrincipleThis experiment demonstrates the effect of friction on motion. The rubber eraser experiences greater friction with the ramp surface than the metal block. A larger component of gravitational force (from a steeper angle) is required to overcome this friction, so the eraser starts sliding later than the metal block.",
+  "high_level_evaluation_guide": "Target concept: friction affects the onset of sliding on an inclined plane, with different materials having different coefficients of friction. Minimum assumptions: identical ramps, same gravitational field, and synchronized angle adjustment. Expected phenomena storyline: (1) Both objects rest on shallow ramps; (2) angle increases together, increasing downslope gravitational component; (3) metal block overcomes friction first and slides; (4) rubber eraser resists longer due to higher friction, then slides at a steeper angle. Visibility constraints: left-right placement must be clear, angle change must be observable, and relative motion timing must be distinguishable within a short, accelerated demonstration."
+}
