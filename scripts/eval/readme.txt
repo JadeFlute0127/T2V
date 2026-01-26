@@ -6,9 +6,10 @@
         （2）Sora2/xxx.mp4 -> 这种一般是300数据
     2.3 执行replace_video_name.py
         正常来说会替换几个视频的名称，兼容上述两种视频文件组织结构
+        会将所有视频文件转移到Sora2/xxx.mp4 这种组织，即不区分domain
 3. 执行video_file_check.py
     3.1 会以sample.jsonl为标准，检查是否缺少需要的视频
-    3.2 如果缺少，则根据日志，补充对应id的视频到Sora2/patch目录下
+    3.2 如果缺少，则根据日志，补充对应id的视频到Sora2/目录下
 4. 执行evaluation.py
     4.1 eval结果会在output/目录下
     4.2 跑完后，可以检查下output/Sora2-evaluation.jsonl是否是300行
