@@ -12,7 +12,7 @@ import  tools
 # 建议通过环境变量设置 API Key，避免硬编码
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-WuHGSBhmDvS18EqS47C7Bd3e1dBc4412BbB884D7E7C9D0D4")
 QINIUYUN_API_KEY = os.getenv("QINIUYUN_API_KEY", "sk-c6bc1786fe3cf6ab55cdcc0e7c1006b8b62a323c3b155d459cfc655ad9b4f659")
-CONTROL_NUM = 20  # 每次处理的最大数据量
+CONTROL_NUM = 200  # 每次处理的最大数据量
 INPUT_DIR = "input"  # 输入目录（需与实际路径匹配）
 OUTPUT_DIR = "output"  # 输出目录
 API_RETRY_TIMES = 3  # API 调用失败重试次数
@@ -325,20 +325,22 @@ if __name__ == "__main__":
                 # # 保存结果
                 # save_gpt_response(data, json_data)
 
+                json_str = tools.process_json_string(response_text)
                 try:
-                    base_filename = safe_filename(data["idx"])
-                    json_path = os.path.join(OUTPUT_DIR, f"{LANGUAGE}", f"{base_filename}.json")
-                    with open(json_path, "w", encoding="utf-8") as f:
-                        json_str = tools.process_json_string(response_text)
+                    # base_filename = safe_filename(data["idx"])
+                    json_path = os.path.join(OUTPUT_DIR, f"{LANGUAGE}", f"requirement_prompt.json")
+                    with open(json_path, "a", encoding="utf-8") as f:
                         json.dump(json_str, f, ensure_ascii=False, indent=4)
+                        f.write("\n")
                     logger.info(f"prompt文件已保存：{json_path}")
                 except Exception as e:
+                    print(json_str)
                     raise Exception(f"保存prompt文件失败：{e}")
 
                 # 计数+延迟（最后一条不延迟）
                 processed_success += 1
-                if idx < process_limit - 1:
-                    time.sleep(API_DELAY)
+                # if idx < process_limit - 1:
+                #     time.sleep(API_DELAY)
 
             except Exception as e:
                 logger.error(f"处理第 {idx + 1} 条数据失败：{str(e)}", exc_info=True)
