@@ -10,7 +10,7 @@
 3. 执行video_file_check.py
     3.1 会以sample.jsonl为标准，检查是否缺少需要的视频
     3.2 如果缺少，则根据日志，补充对应id的视频到Sora2/目录下
-4. 执行evaluation.py
+4. 执行evaluation_dynamic_sample.py（区别在于，之前是每个视频取15帧，但是有的8s有的15s不一致。这里是每秒取2帧，所有视频采样一致。）
     4.1 eval结果会在output/目录下
     4.2 跑完后，可以检查下output/Sora2-evaluation.jsonl是否是300行
     4.3 如果不是300行，可以重新执行evaluation.py文件（会跳过已经存在的case，补充缺少的）
