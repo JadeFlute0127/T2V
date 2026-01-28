@@ -10,7 +10,7 @@ import time
 import tools
 import os
 import json
-from tools.video_processor import prepare_base64frames_dynamic
+from tools.video_dynamic_processor import prepare_base64frames_dynamic
 
 # ===================== 配置区域（仅修改DEFAULT_SAMPLE_FRAMES注释，其他无改动） =====================
 # 建议通过环境变量设置 API Key，避免硬编码
