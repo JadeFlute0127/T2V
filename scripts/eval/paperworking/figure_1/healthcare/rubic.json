@@ -1,0 +1,38 @@
+{
+  "id": "f835f4418c6fa924de1aa96e848d05019d1d8298",
+  "domain": "Healthcare",
+  "subject": "Nursing",
+  "selected_point": "patellar (knee-jerk) reflex with reflex hammer tap",
+  "posted_prompt": "One subject sits on the examination table with their left leg naturally crossed over their right, while another person rapidly taps the patellar tendon below the kneecap on the subject's left leg with a rubber mallet. The camera remains fixed and focused on the subject's leg area.",
+  "video_type": "expirement",
+  "pg_specification": {
+    "1 point": "Scene does not show a seated subject, knee area, or reflex hammer; leg position and actions unrelated to patellar reflex.",
+    "2 points": "Shows a seated subject and knee area, but leg is not crossed or hammer contact location is incorrect.",
+    "3 points": "Subject sits on exam table with left leg visible; leg crossing or hammer position partially correct; camera mostly fixed.",
+    "4 points": "Subject sits with left leg naturally crossed over right; rubber mallet taps near patellar tendon; camera fixed on leg area.",
+    "5 points": "All elements precise: correct seating, clear left-over-right crossing, accurate patellar tendon tap below kneecap, stable fixed camera tightly framed on leg."
+  },
+  "scc_specification": {
+    "1 point": "No leg movement or incorrect reaction inconsistent with reflex physiology.",
+    "2 points": "Some movement occurs but not temporally linked to tendon tap or movement direction incorrect.",
+    "3 points": "Brief lower-leg movement follows tap but amplitude or timing unclear.",
+    "4 points": "Immediate involuntary extension (knee kick) occurs right after tendon tap, consistent with reflex arc.",
+    "5 points": "Clear, immediate knee extension with visible quadriceps contraction following the tap, demonstrating correct cause-effect reflex logic."
+  },
+  "sc_specification": {
+    "1 point": "Severe temporal or spatial discontinuity; actions and reactions disconnected.",
+    "2 points": "Noticeable jumps or inconsistent limb position before and after tap.",
+    "3 points": "Overall continuity acceptable with minor timing or spatial inconsistencies.",
+    "4 points": "Smooth temporal sequence: tap precedes reflex; limb position consistent in space.",
+    "5 points": "Highly coherent spatiotemporal flow with smooth motion, stable lighting, and anatomically consistent limb behavior throughout."
+  },
+  "lpf_specification": {
+    "1 point": "Extremely low visual quality. Meets any of the following criteria: blurry image; severe flickering, completely incomprehensible; frequent distortion of the shape of people or objects; frequent distortion of the motion trajectory of people or objects; object properties severely violating physical laws; frequent and significant fluctuations, frame drops, or jumps in frame transitions.",
+    "2 points": "Relatively low visual quality. Low clarity of individual frames, with obvious artifacts or stroke jitter affecting comprehension; obvious abnormalities in object properties, with object motion frequently violating natural laws; frequent fluctuations and jumps in frame transitions.",
+    "3 points": "Acceptable quality. Fair image clarity, with occasional slight instability, but not affecting the recognition of key information; object properties generally conform to physical laws, but with slight anomalies; occasional unnatural and discontinuous object motion; no obvious fluctuations or jumps in frame transitions.",
+    "4 points": "Good quality. Simultaneously meets the following criteria: overall image is relatively clear; objects appear natural, with individual frames and frame sequences generally conforming to realistic scenes; object properties conform to physical laws, with normal texture and solid/liquid properties, exhibiting only extremely minor imperfections; frame transitions are relatively smooth.",
+    "5 points": "High quality. Simultaneously meets the following criteria: individual frames and frame sequences are clear and stable, with realistic and detailed imagery and smooth timing; all object properties fully conform to physical laws, with stable and realistic material texture, gravity characteristics, and solid/liquid form stability throughout, without any violations of physical laws; motion, color, and lighting effects are realistic; frame transitions are silky smooth, exhibiting high fidelity quality."
+  },
+  "manual": "Instructions for the Experiment: Patellar (Knee-Jerk) Reflex with Reflex Hammer TapI. Basic Experiment Information1. Experiment Title: Demonstration of the Patellar (Knee-Jerk) Reflex2. Subject: Healthcare – Nursing3. Experiment Objective: To demonstrate and observe the patellar reflex, understand the basic neural reflex arc involved, and master the standard operation for eliciting deep tendon reflexes in clinical nursing assessment.II. Experimental EquipmentExamination table or chair, reflex hammer (rubber mallet), adequate lighting; no additional instruments required.III. Experimental Procedure1. Preparation: The subject sits upright on the examination table, relaxed, with the left leg naturally crossed over the right so the lower leg hangs freely. The examiner stands or sits facing the subject’s knee. Ensure the quadriceps muscle is relaxed.2. Positioning: Expose the left knee area. Identify the patellar tendon located just below the kneecap (patella).3. Core Operation: Using the rubber reflex hammer, the examiner rapidly and lightly taps the patellar tendon once, allowing the hammer to swing freely from the wrist.4. Observation: Keep the camera fixed and focused on the subject’s leg area during the tap and immediately afterward to capture the reflex response.5. Completion: After observing the response, stop the test and allow the subject to relax their leg.IV. Observation of Experimental Phenomena1. Initial State: The subject’s lower leg is relaxed and stationary.2. Upon Tapping: Immediately after the patellar tendon is tapped, the lower leg briefly and involuntarily extends forward (knee jerk).3. After Response: The leg returns to its resting position.V. Summary of Experimental PrincipleThe patellar reflex is a monosynaptic stretch reflex. Tapping the patellar tendon stretches the quadriceps femoris muscle, activating muscle spindle receptors. Sensory impulses travel via afferent neurons to the spinal cord (L2–L4), where they synapse directly with motor neurons. The motor neurons then stimulate the quadriceps to contract, causing knee extension. This reflex does not require conscious brain involvement and is used clinically to assess the integrity of the peripheral nerves and spinal cord segments.",
+  "high_level_evaluation_guide": "Target concept: Clinical demonstration of the patellar (knee-jerk) reflex as a basic nursing assessment skill. Minimum assumptions: a relaxed seated subject, a correctly positioned reflex hammer, and a visible lower limb capable of reflex movement. Phased storyline: (1) static setup with subject seated and leg crossed, camera fixed on knee; (2) examiner delivers a quick tap to the patellar tendon; (3) immediate involuntary knee extension occurs; (4) leg returns to rest. Verification requires a clear side or front view of the knee area, stable framing, and visible cause-effect timing between tap and leg movement."
+}
